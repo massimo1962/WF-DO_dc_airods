@@ -1,7 +1,7 @@
 
 ---------
 
-collector for dublin core wf catalog 
+# collector for dublin core wf catalog 
 
 ---------
 how it works:
