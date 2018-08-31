@@ -1,0 +1,37 @@
+{
+  "VERSION": "0.3.0",
+  "VERSION_DATE": "2016-08-26",
+  "ARCHIVE": "INGV EIDA NODE",
+  "PUBLISHER": "OBSPY MSEED-QC",
+  "STRUCTURE": "SDS",
+  "MONGO": {
+    "ENABLED": true,
+    "DB_HOST": "mongodb://mongo_server:27017/",
+    "DB_NAME": "wfrepo",
+    "ALLOW_DOUBLE": false
+  },
+  "DUBLIN_CORE":{
+    "ENABLED": true,
+    "CLS_ORM": "b2stage.models.mongo.wf_do",
+    "AUTH_NETWORKS": "GU",
+    "STATION_ENDPOINT" : "http://webservices.rm.ingv.it/fdsnws/station/1/query?",
+    "HTTP_CONNECTION" : "webservices.rm.ingv.it"
+  },
+  "IRODS": {
+    "ENABLED": true,
+    "HOST": "irods2.int.ingv.it",
+    "PORT": "1247",
+    "USER": "rods",
+    "PSWD": "sdor",
+    "ZONE": "INGV",
+    "BASE_PATH": "/INGV/home/rods/san/archive/"
+    
+  },
+  "ARCHIVE_ROOT": "/usr/src/collector/datastore",
+  "DEFAULT_LOG_FILE": "WFCatalog-collector-dc.log",
+  "PROCESSING_TIMEOUT": 120,
+  "FILTERS": {
+    "WHITE": ["*"],
+    "BLACK": []
+  }
+}
