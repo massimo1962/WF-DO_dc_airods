@@ -1,7 +1,7 @@
 {
   "VERSION": "0.3.0",
   "VERSION_DATE": "2016-08-26",
-  "ARCHIVE": "INGV EIDA NODE",
+  "ARCHIVE": "XXX EIDA NODE",
   "PUBLISHER": "OBSPY MSEED-QC",
   "STRUCTURE": "SDS",
   "MONGO": {
@@ -14,17 +14,17 @@
     "ENABLED": true,
     "CLS_ORM": "b2stage.models.mongo.wf_do",
     "AUTH_NETWORKS": "GU",
-    "STATION_ENDPOINT" : "http://webservices.rm.ingv.it/fdsnws/station/1/query?",
-    "HTTP_CONNECTION" : "webservices.rm.ingv.it"
+    "STATION_ENDPOINT" : "http://xxxxxxx.xxxx.repo.xxx/fdsnws/station/1/query?",
+    "HTTP_CONNECTION" : "address.statonxml.webservices.org"
   },
   "IRODS": {
     "ENABLED": true,
-    "HOST": "irods2.int.ingv.it",
+    "HOST": "irods.xxx.xxx.org",
     "PORT": "1247",
     "USER": "rods",
-    "PSWD": "sdor",
-    "ZONE": "INGV",
-    "BASE_PATH": "/INGV/home/rods/san/archive/"
+    "PSWD": "xxxx",
+    "ZONE": "XXXXX",
+    "BASE_PATH": "/XXXX/home/rods/san/archive/"
     
   },
   "ARCHIVE_ROOT": "/usr/src/collector/datastore",
